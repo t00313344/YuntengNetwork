@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>首页</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="public/Css/header.css" rel="stylesheet" type="text/css" />
+	<link href="public/Css/footer.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	html{overflow-y:scroll;}
+	body {font-family: "宋体"; font-size: 12px; line-height: 1.5;margin:0px;padding:0px;/*
+	注释：做网页时，取掉页面（body）与浏览器之间的间隔:margin:0px;padding:0px;
+	*/}
+	a{color: #0066FF; text-decoration: none; }
+	a:hover { color: #0066FF;}
+	/*slide*/
+	.roll-news{width:100%;height:300px;border:0px;background-color:#000000;margin: 0px auto;}
+	.roll-news-image{width:1024px;height:300px;border:0px;margin: 0px auto;}
+	.roll-news-image img{width:1024px;height:300px;border:0px;}
+	.roll-news-index{position: relative;margin-right: 15px;top: -50px;float:right;}
+	/*.roll-news-index ul .roll-news-index-hover{color:#AAAAAA;text-align:center;}
+	.roll-news-index li{float:left;list-style-type:disk;margin-left:15px;color:#555555;font-size:25px;}*/
+	.roll-news-index-hover{color: #BCBCBC;text-align:center;}
+	.roll-news-index li{background-color:black;width:10px;height:10px;float:left;list-style:none;text-align:center;margin:0 5px;border:1px solid #666666;color:black;}
+	/*公司简介*/
+	#newpro{margin:0 auto;height:320px;border:1px solid #BCBCBC;width:1024px;margin-top:1px;}
+	#pro{margin-top:10px;width:450px;height:300px;border:0px solid #BCBCBC;float:left;margin-left:6px;}
+	#pro img{margin-top:5px;width:390px;padding-left:15px;}
+	#pro b{padding-left:15px;color:#555555;}
+	#pro span{width:390px;padding-left:15px;line-height:1.5;display:block;text-align:justify;color:#777777;}
+	#pro span a{color:#777777;}
+	#pro span a:hover{color:#000000;}
+	/*竖线*/
+	#tiao{margin-left:10px;margin-top:10px;width:1px;height:300px;background:gray;float:left;}
+	/*新闻div*/
+	/*#new{margin-top:-40px;width:450px;height:300px;border:1px solid #BCBCBC;float:left;margin-left:16px;}*/
+	#new{margin-top:10px;width:450px;height:300px;border:0px solid #BCBCBC;float:left;margin-left:16px;}
+	#new b{color:#555555;}
+	#new ul{line-height:2.7;margin-top:2px;list-style:disk;color:#777777;}
+	#new ul li{width:300px;color:#777777;}
+	#new ul li a{color:#777777;}
+	#new ul li a:hover{color:#000000;}
+	/*友情链接*/
+	#friend{width:1024px;height:200px;border:1px solid #ccc;margin:0 auto;margin-top:1px;<!--background:url("__PUBLIC__/Images/log.jpg")0 0 no-repeat;background-size:100% 100%-->}
+	#friend ul{list-style:none;}
+	#friend ul li img{width:100px;height:100px}
+	#friend ul li{margin-left:40px;width:200px;float:left;}
+	#friend ul li a {display:block;}
+	/*main*/
+	.main{font-family: "宋体";width:100%;height:630px;margin:0 auto;border:0px;}
+	#menu{font-family: "宋体"; font-size: 15px;}
+	
+</style>
+<script type="text/javascript" src="public/Js/jquery-1.9.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var index = 0;
+				var slideFlag = true;
+				var length = $(".roll-news-index li").length;
+				function showImg(i){
+					$(".roll-news-image a").eq(i).stop(true,true).fadeIn(300).siblings("a").hide();
+					$(".roll-news-index li").css("background-color","#666666");	
+					//$(".roll-news-index li").removeClass("roll-news-index-hover");
+					//$(".roll-news-index li").eq(i).addClass("roll-news-index-hover");
+					$(".roll-news-index li").eq(i).css("background-color","#111111");
+
+					
+				}
+				$(".roll-news-index li").mouseover(function(){
+					index = $(".roll-news-index li").index(this);	
+					showImg(index);
+					slideFlag = false;
+				});
+				showImg(index);
+				function autoSlide(){
+					setInterval(function(){
+						if(slideFlag){
+							showImg((index+1)%length);
+							index = (index+1)%length;
+						}
+						slideFlag = true;
+					},6000);
+				}
+				autoSlide();
+			});
+			function baidu(){
+				window.open("http://www.baidu.com");
+			}
+			function tp(){
+				window.open("http://www.thinkphp.cn");
+			}
+			function google(){
+				window.open("http://www.google.cn");
+			}
+			function xiaomi(){
+				window.open("http://www.xiaomi.com");
+			}
+		</script>
+</head>
+<body>
+	<!--header-->
+	  <div id="top">
+		<div id="header">
+				<img src="public/Images/logo.png" alt="logo" title="西安时云软件科技">
+		</div>
+		<div id="menu">
+		<ul>
+		<li><a href="index.html">首页</a></li>
+		<li><a href="Index_introduce.html">公司简介</a></li>
+		<li><a href="Index_history.html">地图圈</a></li>
+		<li><a href="#">成功案例</a>
+				<ul>
+					<li><a href="#">移动APP</a></li>
+					<li><a href="#">智能设备</a></li>
+					<li><a href="#">其他</a></li>
+				</ul>
+		</li>
+		<li><a href="Index_service.html">服务与支持</a></li>
+		<li><a href="Index_contact.html">联系我们</a></li>
+		</ul>
+		<!--
+		<div id="visited">
+				您是本站第&nbsp;{$num}&nbsp;位访客
+		</div>-->
+		</div>
+		<div>
+		<!--header-->
+	<div class="main">
+	<div class="roll-news">
+				<div class="roll-news-image">
+					<a href="Index_history.html"><img src="public/Images/home_mapq.jpg" title="地图圈"></a>
+					<a href="Index_service.html" style="display:none"><img src="public/Images/home_app.jpg" title="APP应用开发"></a>
+					<!--<a href="{:U('Index/index/service')}" style="display:none"><img src="public/Images/home_hw.jpg" title="硬件设计开发"></a>
+					<a href="{:U('Index/index/service')}" style="display:none"><img src="public/Images/home_linux.jpg" title="嵌入式Linux开发"></a>-->
+					<a href="Index_service.html" style="display:none"><img src="public/Images/home_server.jpg" title="专业服务器开发"></a>
+					<a href="Index_service.html" style="display:none"><img src="public/Images/home_win.jpg" title="Windows软件开发"></a>
+				</div>
+				<div class="roll-news-index">
+					<ul>
+						<li class="roll-news-index-hover"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+	</div>
+	<div id="newpro">
+		<div id="pro">
+			<b>公司简介</b>/<font color="#ccc">About Us</font><br>
+			<img src="public/Images/gongsi.jpg" alt="公司简介" title="公司简介"><br>
+			<span>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;西安时云软件科技有限公司</b> 成立于2014年7月，是一家专注于移动互联网、智能家居、物联网等行业技术服务与咨询的高新技术企业，公司提供APP（IOS、Android）开发、服务器开发、网站开发、嵌入式Linux开发、智能设备开发、专业通信设备开发等服务，可协助客户进行市场分析、需求分析，并针对客户的需求提供专的产品规划、方案设计、开发测试等一系列完整的解决方案......     [<a href="Index_introduce.html">详细</a>]
+			</span>
+		</div>
+		<div id="tiao">
+		</div>
+		<div id="new">
+			<b>新闻动态</b>
+			<ul>
+				<li><a href="#">2014年7月公司成立</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--<div id="friend">
+		<b><span>友情链接:</span></b>
+		<ul>
+			<li><img src="public/Images/baidu.jpg" onclick="baidu();"></li>
+			<li><img src="public/Images/tp.gif" onclick="tp();"></li>
+			<li><img src="public/Images/xiaomi.jpg" onclick="xiaomi();"></li>
+			<li><img src="public/Images/google.jpg" onclick="google();"></li>
+		</ul>
+	</div>-->	
+</div>
+<!--footer-->
+<div id="footer">
+	<dl>
+		<dd>
+			Copyright &copy; 2009 - 2014 aa25.cn   All Rights Reserved
+		</dd>
+		<dd>
+			标准之路  版权所有  陕ICP备14007565号
+		</dd>
+	</dl>	
+</div>
+<!--footer-->
+</body>
+</html>
