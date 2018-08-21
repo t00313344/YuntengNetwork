@@ -4,12 +4,12 @@
 	#header img{width:450;height:60;padding-top:10px;}
 	/*header*/
 	/*menu*/
-	#menu {width:1024px; margin:0 auto; border: 0px solid #CCC; height:40px;font-size:17px;font-family:"宋体";}
+	#menu{width:1024px; margin:0 auto; border: 0px solid #CCC; height:40px;font-size:16px;font-family:"宋体";}
 	/*父级菜单*/
-	#menu ul {list-style: none; margin: 0px; padding: 0px; }
-	#menu ul li {float:left; padding: 0px 0px; height:40px; margin-left:20px;padding-left:0px;}
+	#menu ul{list-style: none; margin: 0px; padding: 0px;}
+	#menu ul li{float:left; padding: 0px 0px; height:40px; margin-left:20px;padding-left:0px;}
 	#menu ul li a{display:block;width:100px;height:40px;line-height:40px;text-align:center;color:#555555;}
-	#menu ul li a:hover{background:#5599FF;color:#fff;}
+	#menu ul li a:hover{background:#6495ED;color:#fff;text-decoration:none;}
 	/*父级菜单*/
 
 	/*下拉子菜单*/
@@ -17,15 +17,15 @@
 	#menu ul li:hover ul{display:block;z-index:99999;}
 	#menu ul li ul li{float:none;width:100px;margin:0;}/*清除二级菜单的浮动*/
 	#menu ul li ul li a{background:#BCBCBC;}
-	#menu ul li ul li a:hover{background:#5599FF;;color:#fff;}
+	#menu ul li ul li a:hover{background:#6495ED;color:#fff;text-decoration:none;}
 	/*下拉子菜单*/
 	/*menu*/
 	html{overflow-y:scroll;}
-	body {font-family: "宋体"; font-size: 15px; line-height: 1.5;margin:0px;padding:0px;/*
+	body{font-family: "宋体"; font-size: 16px; line-height: 1.5;margin:0px;padding:0px;/*
 	注释：做网页时，取掉页面（body）与浏览器之间的间隔:margin:0px;padding:0px;
 	*/}
-	a{color: #0066FF; text-decoration: none; }
-	a:hover { color: #0066FF;}
+	/*a{color: #0066FF; text-decoration: none; }
+	a:hover { color: #0066FF;}*/
 	/*slide*/
 	.roll-news{width:100%;height:300px;border:0px;background-color:#000000;margin: 0px auto;}
 	.roll-news-image{width:1024px;height:300px;border:0px;margin: 0px auto;}
@@ -37,26 +37,8 @@
 	.roll-news-index li{background-color:black;width:10px;height:10px;float:left;list-style:none;text-align:center;margin:0 5px;border:1px solid #666666;color:black;}
 	/*公司简介*/
 	#newpro{margin:0 auto;height:320px;border:1px solid #BCBCBC;width:1024px;margin-top:1px;}
-	#pro{margin-top:10px;width:450px;height:300px;border:0px solid #BCBCBC;float:left;margin-left:6px;}
-	#pro img{margin-top:5px;width:390px;padding-left:15px;}
-	#pro b{padding-left:15px;color:#555555;}
-	#pro span{width:390px;padding-left:15px;line-height:1.5;display:block;text-align:justify;color:#777777;}
-	#pro span a{color:#777777;}
-	#pro span a:hover{color:#000000;}
-	/*竖线*/
-	#tiao{margin-left:10px;margin-top:10px;width:1px;height:300px;background:gray;float:left;}
-	/*新闻div*/
-	/*#new{margin-top:-40px;width:450px;height:300px;border:1px solid #BCBCBC;float:left;margin-left:16px;}*/
-	#new{margin-top:10px;width:450px;height:300px;border:0px solid #BCBCBC;float:left;margin-left:16px;}
-	#new b{color:#555555;}
-	#new ul{line-height:2.7;margin-top:2px;list-style:disk;color:#777777;}
-	#new ul li{width:300px;color:#777777;}
-	#new ul li a{color:#777777;}
-	#new ul li a:hover{color:#000000;}
 	/*main*/
 	.main{font-family: "宋体";width:100%;height:630px;margin:0 auto;border:0px;}
-	#menu{font-family: "宋体"; font-size: 15px;}
-	#compony_introduce{width:510px;float:left;}
-	#dyn_news{width:510px;float:left;}
-	/*.panel-body{height:320px;}*/
+	#compony_introduce{width:510px;float:left;font-size: 15px;}
+	#dyn_news{width:510px;float:left;font-size: 15px;}
 	.panel-body ul li{list-style:none; margin-left:0px;}
