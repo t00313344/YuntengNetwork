@@ -5,6 +5,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="public/Css/header.css" rel="stylesheet" type="text/css" />
 <link href="public/Css/footer.css" rel="stylesheet" type="text/css" />
+<link href="public/Css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="public/Js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="public/Js/bootstrap.min.js"></script>
 <style type="text/css">
 	body{font-family:Verdana;font-size:17px;line-height: 1.5;margin:0px;padding:0px;}
 	html{overflow-y:scroll;}
@@ -12,29 +15,11 @@
 	a:hover {color:#555555;}
 	.second a{color:blue; text-decoration:none;}
 	.second a:hover { color:blue; text-decoration: underline;}
+	.panel-body{height:320px;font-size: 15px;}
 	#service{width:100%;height:300px;border:0px;background-color:#000000;margin:0px auto;}
 	#service_sub{width:1024px;height:300px;border:0px;margin: 0px auto;}
 	#service_sub img{width:1024px;height:300px;border:0px;}
 	#contact{width:1024px; margin:0 auto; border: 1px solid #CCC; height:320px;}
-	#contact_1{width:502px;float:left;border:0px solid green;height:300px;}
-	#contact_1,#contact_2 h2{color:#808080;}
-	#contact_2{width:502px;float:left;border:0px solid red;height:300px;margin-left:10px;}
-	
-    #contact_1 span{font-weight:200;}
-	#contact_1 table{border-collapse:collapse}
-	#contact_1 table tr{height:80px;}
-	#contact_1 .first{margin-left:15px;text-align:center;}
-	#contact_1 .first img{margin-left:15px;width:30px;height:30px;}
-	#contact_1 .second{padding-left:20px;color:#808080;font-weight:bold;font-size:17px;color:#555555;}/*表格内容距离边框的距离的设置*/
-	
-	#contact_2 span{font-weight:200;}
-	#contact_2 table{border-collapse:collapse;margin-left:40px;}
-	#contact_2 table th{width:250px;height:50px;text-align:left;font-family:"宋体";color:#888888;}
-	#contact_2 table td{width:250px;height:150px;text-align:left;}
-	#contact_2 table img{width:160px;height:160px;}
-	
-	/*竖线*/
-	#tiao{margin-left:8px;margin-top:10px;width:1px;height:300px;background:gray;float:left;}
 </style>
 </head>
 <body>
@@ -42,7 +27,7 @@
 	  <div id="top">
 		<div id="header">
 			<div id="logo">
-				<img src="public/Images/logo.png" alt="logo" title="西安时云软件科技">
+				<img src="public/Images/logo.png" alt="logo" title="西安云腾网络科技">
 			</div>
 		</div>
 		<div id="menu">
@@ -77,54 +62,27 @@
 	
 	<div id="service">
 		<div id="service_sub">
-			<img src="public/Images/home_mapq.jpg" alt="图片" title="联系我们">
+			<img src="public/Images/contact_us.png" alt="图片" title="联系我们">
 		</div>
 	</div>
 	<div id="contact">
-		<div id="contact_1">
-			<h2>联系方式:</h2>
-			<table border="0">
-				<tr>
-					<td class="first"><img src="public/Images/icon_addr.png" title=""></td>
-					<td class="second">
-						<span>地址: 西安市高新区锦业二路84号</span>
-					</td>
-				</tr>
-				<tr>
-					<td class="first"><img src="public/Images/icon_phone.png" title=""></td>
-					<td class="second">
-						<span>电话: 029-81778807</span>
-					</td>
-				</tr>
-				<tr>
-					<td class="first"><img src="public/Images/icon_mail.png" title=""></td>
-					<td class="second">
-						<span>邮箱: <a href="mailto:mail@shiyunsoft.com">mail@shiyunsoft.com</a></span>
-					</td>
-				</tr>
-			</table>
-		</div>
-		<div id="tiao">
-		</div>
-		<div id="contact_2">
-			<h2>关注我们:</h2>
-			<table border="0">
-				<tr>
-					<th>&nbsp;扫一扫关注微信</th>
-					<th>&nbsp;扫一扫关注微博</th>
-				</tr>
-				<tr>
-					<td><img src="public/Images/weixin.jpg" alt="微信"></td>
-					<td><img src="public/Images/weixin.jpg" alt="微博"></td>
-				</tr>
-			</table>
+		<div class="panel panel-info">
+			<div class="panel-heading">联系我们</div>
+			<div class="panel-body">
+				罗森伯格亚太电子有限公司<br>
+				地址: 北京市顺义区空港工业区B区安祥街3号<br>
+				邮编: 101300<br>
+				电话: (+86 10) 80481995<br>
+				传真: (+86 10) 80497052<br>
+				邮件:sales@RosenbergerAP.com<br>
+			</div>
 		</div>
 	</div>
 <!--footer-->
 <div id="footer">
 	<dl>
 		<dd>
-			Copyright &copy; 2009 - 2014 aa25.cn   All Rights Reserved
+			Copyright &copy; 2009 - 2018 aa25.cn   All Rights Reserved
 		</dd>
 		<dd>
 			标准之路  版权所有  陕ICP备14007565号
