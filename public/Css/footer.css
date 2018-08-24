@@ -1,6 +1,6 @@
 	/*footer*/
-	#footer {text-align:center; width:1024px;margin:0 auto;height:100px; border:1px solid #ccc;position:relative;bottom:0px;background-color:#DCDCDC;}
+	#footer {text-align:center; width:1024px;margin:0 auto;height:80px; border:1px solid #ccc;position:relative;bottom:0px;background-color:#F5F5F5;}
 	#footer dl dt{height:28px; line-height:28px; background:#afafaf; color:#fff;}
 	#footer dl dt a{font-weight:bold; color:#fff;}
-	#footer dl dd {padding:8px 0; color:#555555; line-height:1;font-size:17px;}
+	#footer dl dd {padding:8px 0; color:#555555; line-height:1;font-size:15px;}
 	/*footer*/
