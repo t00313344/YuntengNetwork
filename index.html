@@ -40,11 +40,15 @@
 				}
 				autoSlide();
 			});
+			$(window).load(function(){
+
+    			$(".panel-body img").addClass("img-responsive center-block");
+
+			})
 		</script>
 </head>
 <body>
 	<!--header-->
-	<!--<iframe name="toppage" width=100% height=150px marginwidth=0 marginheight=0 frameborder="no" border="0" scrolling="no" src="index_common_header.html" ></iframe>-->
 	  <div id="top">
 		<div id="header">
 				<img src="public/Images/logo.png" alt="logo" title="西安云腾网络科技">
@@ -79,8 +83,8 @@
 					<div class="roll-news-image">
 						<a href="Index_history.html"><img src="public/Images/home_mapq.jpg" title="地图圈"></a>
 						<a href="Index_service.html" style="display:none"><img src="public/Images/home_app.jpg" title="APP应用开发"></a>
-						<!--<a href="{:U('Index/index/service')}" style="display:none"><img src="public/Images/home_hw.jpg" title="硬件设计开发"></a>
-						<a href="{:U('Index/index/service')}" style="display:none"><img src="public/Images/home_linux.jpg" title="嵌入式Linux开发"></a>-->
+						<a href="Index_service.html" style="display:none"><img src="public/Images/home_hw.jpg" title="硬件设计开发"></a>
+						<a href="Index_service.html" style="display:none"><img src="public/Images/home_linux.jpg" title="嵌入式Linux开发"></a>
 						<a href="Index_service.html" style="display:none"><img src="public/Images/home_server.jpg" title="专业服务器开发"></a>
 						<a href="Index_service.html" style="display:none"><img src="public/Images/home_win.jpg" title="Windows软件开发"></a>
 					</div>
@@ -90,10 +94,12 @@
 							<li></li>
 							<li></li>
 							<li></li>
+							<li></li>
+							<li></li>
 						</ul>
 					</div>
 		</div>
-		<div id="newpro">
+		<div id="compony_introduce_news">
 			<div id="compony_introduce" class="panel panel-primary">
 				<div class="panel-heading">公司简介</div>
 				<div class="panel-body"><b>西安云腾网络科技有限公司</b> 成立于2014年7月，是一家专注于移动互联网、智能家居、物联网等行业技术服务与咨询的高新技术企业，公司提供APP（IOS、Android）开发、服务器开发、网站开发、嵌入式Linux开发、智能设备开发、专业通信设备开发等服务，可协助客户进行市场分析、需求分析，并针对客户的需求提供专的产品规划、方案设计、开发测试等一系列完整的解决方案......  </div>
@@ -103,6 +109,51 @@
 				<div class="panel-body">
 					<a href="">罗森伯格客户服务部</a><br>
 					<p>罗森伯格客户服务部是一支有很强执行力、充满活力的团队，主要负责客户和销售的支持服务工作。客户服务内容包括众多方面，涉及售前、售中和售后营运环节的每一个细小的、日常的细节。如报价、订单执行、协调物流、进出口单据等。我们采用从客户询价、订单维护到售后跟踪的点对点的服务原则，以给客户提供优化的定制解决方案为宗旨，不断提高和完善管理体制，力求建设"专业、完美、流程化"的服务网络</p>
+				</div>
+			</div>
+		</div>
+		<div id="showProductsPanel">
+			<!--<div id="showProducts" class="panel panel-warning">
+				<div class="panel-body">
+					<a href="">罗森伯格客户服务部</a><br>
+					<p>罗森伯格客户服务部是一支有很强执行力、充满活力的团队，主要负责客户和销售的支持服务工作。客户服务内容包括众多方面，涉及售前、售中和售后营运环节的每一个细小的、日常的细节。如报价、订单执行、协调物流、进出口单据等。我们采用从客户询价、订单维护到售后跟踪的点对点的服务原则，以给客户提供优化的定制解决方案为宗旨，不断提高和完善管理体制，力求建设"专业、完美、流程化"的服务网络</p>
+				</div>
+				<div class="yuntengTip"><img src="public/Images/yuntengTips.png"></div>
+			</div>-->
+			<div id="product1" class="panel panel-default">
+				<div class="panel-heading">switch</div>
+				<div class="panel-body">
+					<img src="public/Images/log.jpg">
+				</div>
+			</div>
+			<div id="product2" class="panel panel-default">
+				<div class="panel-heading">switch</div>
+				<div class="panel-body">
+					<img src="public/Images/log.jpg">
+				</div>
+			</div>
+			<div id="product3" class="panel panel-default">
+				<div class="panel-heading">switch</div>
+				<div class="panel-body">
+					<img src="public/Images/log.jpg">
+				</div>
+			</div>
+			<div id="product4" class="panel panel-default">
+				<div class="panel-heading">switch</div>
+				<div class="panel-body">
+					<img src="public/Images/log.jpg">
+				</div>
+			</div>
+			<div id="product5" class="panel panel-default">
+				<div class="panel-heading">switch</div>
+				<div class="panel-body">
+					<img src="public/Images/log.jpg">
+				</div>
+			</div>
+			<div id="product6" class="panel panel-default">
+				<div class="panel-heading">switch</div>
+				<div class="panel-body">
+					<img src="public/Images/log.jpg">
 				</div>
 			</div>
 		</div>
