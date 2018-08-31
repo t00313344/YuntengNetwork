@@ -4,7 +4,7 @@
 	#header img{width:450;height:60;padding-top:10px;}
 	/*header*/
 	/*menu*/
-	#menu{width:1024px; margin:0 auto; border: 0px solid #CCC; height:40px;font-size:16px;font-family:"宋体";}
+	#menu{width:1024px; margin:0 auto; border: 0px solid #CCC; height:40px;font-size:18px;font-family:"宋体";}
 	/*父级菜单*/
 	#menu ul{list-style: none; margin: 0px; padding: 0px;}
 	#menu ul li{float:left; padding: 0px 0px; height:40px; margin-left:20px;padding-left:0px;}
